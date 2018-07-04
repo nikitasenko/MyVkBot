@@ -16,7 +16,7 @@ bot.command('weather', CommandFunctions.weather);
 
 bot.event('group_join', ({ reply }) => reply('Ну и зачем вы тут?!'));
 
-
+const port = process.env.PORT || 8080;
 app.use(bodyParser.json());
 app.post('/', bot.listen);
-app.listen(8080);
+app.listen(port);
