@@ -11,6 +11,8 @@ const bot = new Botact({
 
 
 bot.command('random', CommandFunctions.random);
+bot.command('weather', CommandFunctions.weather);
+
 
 bot.event('group_join', ({ reply }) => reply('Ну и зачем вы тут?!'));
 
